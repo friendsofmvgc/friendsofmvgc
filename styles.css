@@ -19,14 +19,14 @@ main, section, footer {
 }
 
 /* ========================
-   Top Header
+   Top Header (Full Width)
 ======================== */
 header {
-  width: 100%; /* full width */
-  background: #1f3d2b; /* dark green */
-  color: white; /* white text */
-  text-align: center; /* center content */
-  padding: 4rem 1rem; /* vertical spacing */
+  width: 100%;             /* full width */
+  background: #1f3d2b;     /* dark green */
+  color: white;            /* white text */
+  text-align: center;      /* center the text */
+  padding: 4rem 1rem;      /* vertical spacing */
   box-sizing: border-box;
 }
 
@@ -60,14 +60,14 @@ ul {
 }
 
 /* ========================
-   Navigation
+   Navigation (Full Width Optional / Centered Links)
 ======================== */
 nav {
   text-align: center;
-  margin: 1rem 0;
+  width: 100%;           /* full width of page */
+  background: #f4f9f6;   /* light green-ish nav background */
   padding: 0.5rem 0;
-  background: #f4f9f6;
-  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 nav a {
