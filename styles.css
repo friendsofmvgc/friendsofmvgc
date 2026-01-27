@@ -10,7 +10,6 @@ body {
   background: #ffffff;
 }
 
-/* Add spacing around main content */
 main, section, footer {
   max-width: 1000px;
   margin: 0 auto;
@@ -19,74 +18,54 @@ main, section, footer {
 }
 
 /* ========================
-   Top Header (Full Width)
+   Header
 ======================== */
 header {
-  width: 100%;             /* full width */
-  background: #1f3d2b;     /* dark green */
-  color: white;            /* white text */
-  text-align: center;      /* center the text */
-  padding: 4rem 1rem;      /* vertical spacing */
+  width: 100%;
+  background: #1f3d2b;  /* dark green */
+  color: white;
+  padding: 4rem 1rem;
   box-sizing: border-box;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: 700;
+  color: white;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-/* ========================
-   Headings
-======================== */
-h1, h2, h3 {
-  color: #1f3d2b;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+/* Header nav */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* Paragraphs and lists */
-p {
-  margin-bottom: 1rem;
-}
-
-ul {
-  margin: 1rem 0 1rem 2rem;
-  padding: 0;
-  list-style-type: disc;
-}
-
-/* ========================
-   Navigation (Full Width Optional / Centered Links)
-======================== */
-nav {
-  text-align: center;
-  width: 100%;           /* full width of page */
-  background: #f4f9f6;   /* light green-ish nav background */
-  padding: 0.5rem 0;
-  box-sizing: border-box;
-}
-
-nav a {
-  color: #2f7d4c;
-  margin: 0 0.7rem;
+header nav a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
 /* ========================
-   Hero Section (Index Page)
+   Hero Section
 ======================== */
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background: #1f3d2b; /* dark green like top header */
+  background: #2f7d4c;  /* lighter green for contrast */
   color: white;
   padding: 5rem 2rem;
   margin: 2rem 0;
@@ -102,31 +81,34 @@ nav a:hover {
   max-width: 700px;
   margin: 0 auto 2rem auto;
   font-size: 1.1rem;
-  color: #e0f0e5; /* softer white for readability */
+  color: #e0f0e5;
 }
 
+/* Hero buttons */
 .hero-buttons {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero-buttons .button {
-  display: inline-block;
-  margin: 0 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
-  background: #2f7d4c;
+  background: #245c38;  /* darker button for contrast */
   border-radius: 4px;
   text-decoration: none;
+  margin: 0;
 }
 
 .hero-buttons .button:hover {
-  background: #245c38;
+  background: #1f3d2b;
 }
 
 /* ========================
-   Buttons (General)
+   General Buttons
 ======================== */
 .button {
   display: inline-block;
@@ -164,7 +146,7 @@ section {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background: #f4f4f4; /* restore original footer color */
+  background: #f4f4f4;
   margin-top: 3rem;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -190,12 +172,17 @@ footer a:hover {
     margin: 0.5rem 0;
   }
 
-  .hero-buttons .button {
-    display: block;
-    margin: 0.5rem auto;
-  }
-
   .hero h2 {
     font-size: 1.5rem;
+  }
+
+  .hero-buttons .button {
+    width: 80%;
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
