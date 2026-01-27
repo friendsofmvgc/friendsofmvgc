@@ -1,57 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Donate | Friends of Mill Valley Golf Course</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* ========================
+   Base / Reset
+======================== */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #ffffff;
+}
 
-<header>
- <nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="projects.html">Projects</a> |
-  <a href="board.html">Board</a> |
-  <a href="volunteer-support.html">Volunteer & Support</a> |
-  <a href="donate.html">Donate</a> |
-  <a href="contact.html">Contact</a>
-</nav>
-  <h1>Support the Course</h1>
-</header>
+/* Add spacing around page content */
+main, header, footer, section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
 
+/* ========================
+   Headings
+======================== */
+h1, h2, h3 {
+  color: #1f3d2b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 
+/* Paragraphs and lists */
+p {
+  margin-bottom: 1rem;
+}
 
-<section>
-  <p>
-    You can donate online with the button below, or send a check to:  
-    </p><p></p><strong>Friends of Mill Valley Golf Course</strong><br>
-    775 East Blithedale Ave, PMB 164, Mill Valley, CA 94941
-  </p>
+ul {
+  margin: 1rem 0 1rem 2rem;
+  padding: 0;
+  list-style-type: disc;
+}
 
-  <a class="button" href="https://www.zeffy.com/en-US/donation-form/donate-to-preserve-and-improve-the-mill-valley-golf-course">Donate Now</a>
+/* ========================
+   Navigation
+======================== */
+nav {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  background: #f4f9f6;
+  border-radius: 8px;
+}
 
-  <p>
-    We are a non-profit 501(c)(3) organization (Tax ID #39-2433079), and your contributions are tax-deductible to the full extent allowable by law.
-  </p>
+nav a {
+  color: #2f7d4c;
+  margin: 0 0.7rem;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  <p>
-    Thank you for supporting the Mill Valley Golf Course. Your generosity helps us continue to preserve and enhance this treasured community resource.
-  </p>
+nav a:hover {
+  text-decoration: underline;
+}
 
-  <h2>Other Ways to Contribute</h2>
-  <ul>
-    <li>Sponsor a project</li>
-    <li>Support a tournament or event</li>
-    <li>Fund a specific improvement</li>
-  </ul>
-</section>
+/* ========================
+   Hero Section (Index Page)
+======================== */
+.hero {
+  text-align: center;
+  background: #1f3d2b; /* restore original dark header look */
+  color: white;
+  padding: 5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
 
-<footer>
-  <p>&copy; 2026 Friends of Mill Valley Golf Course</p>
-  <p><a href="contact.html">Contact</a> | <a href="donate.html">Donate</a></p>
-</footer>
-
-</body>
-</html>
+.h
