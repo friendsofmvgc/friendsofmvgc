@@ -1,52 +1,88 @@
+/* ========================
+   General Page Styles
+======================== */
 body {
-  font-family: system-ui, sans-serif;
-  margin: 0;
-  color: #222;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-}
-
-header {
-  background: #1f3d2b;
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #ffffff;
 }
 
 h1, h2 {
+  color: #1f3d2b;
+  margin-bottom: 0.5rem;
+}
+
+p {
   margin-bottom: 1rem;
 }
 
-.button {
-  display: inline-block;
-  background: #2f7d4c;
-  color: white;
-  padding: 0.75rem 1.25rem;
-  text-decoration: none;
-  border-radius: 4px;
+ul {
+  margin-bottom: 1rem;
 }
 
-footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
+/* ========================
+   Navigation
+======================== */
 nav {
-  margin-top: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  background: #f4f9f6;
+  border-radius: 8px;
 }
 
 nav a {
-  color: white;
-  margin: 0 0.5rem;
+  color: #2f7d4c;
+  margin: 0 0.7rem;
   text-decoration: none;
   font-weight: bold;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Hero Section (Index)
+======================== */
+.hero {
+  text-align: center;
+  background: #f4f9f6;
+  padding: 4rem 1rem;
+  margin: 3rem 1rem;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.hero-buttons .button {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: #2f7d4c;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.hero-buttons .button:hover {
+  background: #245c38;
+}
+
+/* ========================
+   Buttons (General)
+======================== */
 .button {
   display: inline-block;
   background: #2f7d4c;
@@ -61,61 +97,55 @@ nav a {
 .button:hover {
   background: #245c38;
 }
-nav {
-  text-align: center;
-  margin: 1.5rem 0;
-}
 
-nav a {
-  color: #2f7d4c;
-  margin: 0 0.7rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-/* Hero Section */
-.hero {
-  text-align: center;
-  background: #f4f9f6;
-  padding: 4rem 1rem;
-  margin-bottom: 3rem;
-  border-radius: 8px;
-}
-
-.hero h2 {
-  color: #1f3d2b;
-  margin-bottom: 1rem;
-}
-
-.hero-buttons {
-  margin-top: 2rem;
-}
-
-.hero-buttons .button {
-  margin: 0 0.5rem;
-  padding: 1rem 1.5rem;
-  font-size: 1.1rem;
-}
-
-/* Mission Section */
-.mission {
+/* ========================
+   Sections
+======================== */
+section {
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Projects Preview */
-.projects-preview {
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  padding: 0 1rem;
-}
-
-.projects-preview ul {
+.projects-preview ul,
+.mission ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
 
+/* ========================
+   Footer
+======================== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f4f9f6;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #2f7d4c;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Responsive
+======================== */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .hero-buttons .button {
+    display: block;
+    margin: 0.5rem auto;
+  }
+}
