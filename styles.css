@@ -1,17 +1,18 @@
 /* ========================
-   General Page Styles
+   Base / Reset
 ======================== */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem; /* preserve old page padding */
   color: #333;
   background: #ffffff;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #1f3d2b;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -20,7 +21,8 @@ p {
 }
 
 ul {
-  margin-bottom: 1rem;
+  margin: 1rem 0 1rem 2rem;
+  padding: 0;
 }
 
 /* ========================
@@ -46,13 +48,13 @@ nav a:hover {
 }
 
 /* ========================
-   Hero Section (Index)
+   Hero Section (Index Page)
 ======================== */
 .hero {
   text-align: center;
   background: #f4f9f6;
   padding: 4rem 1rem;
-  margin: 3rem 1rem;
+  margin: 3rem 0;
   border-radius: 8px;
 }
 
