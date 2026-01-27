@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Friends of Mill Valley Golf Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>About Us</h1>
+</header>
+
+<section>
+  <h2>Mission Statement</h2>
+  <p>
+    Friends of Mill Valley Golf Course is a nonprofit public benefit organization formed to preserve, maintain, and enhance the Mill Valley public golf course as an open-space recreational and environmental resource for the community.
+  </p>
+  <p>
+    The organization’s activities focus on promoting access to outdoor recreation, supporting environmental stewardship, and encouraging public engagement with this historic and scenic community asset.
+  </p>
+</section>
+
+<footer>
+  <p><a href="index.html">Home</a></p>
+</footer>
+
+</body>
+</html>
