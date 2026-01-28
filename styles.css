@@ -237,3 +237,8 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
