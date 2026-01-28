@@ -56,6 +56,74 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+/* NAV CONTAINER */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f9f6;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+/* Default nav (desktop) */
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #2f7d4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: #f4f9f6;
+    padding: 0 1rem;
+    border-radius: 8px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+  }
+
+  nav.show {
+    max-height: 500px;
+    padding: 1rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 /* ========================
    Hero Section
 ======================== */
