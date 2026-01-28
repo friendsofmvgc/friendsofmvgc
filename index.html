@@ -15,6 +15,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
+</script>
 <body>
 
 <header>
@@ -24,7 +29,7 @@
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <nav id="nav-menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="residents-cup.html">Residents Cup</a>
