@@ -73,7 +73,8 @@ main, section, footer {
     flex-direction: column;
     background: #1f3d2b;
     position: absolute;
-    top: 60px;
+    top: 100%;
+    margin-top: 8px;
     right: 10px;
     width: 220px;
     padding: 1rem;
@@ -83,6 +84,7 @@ main, section, footer {
     overflow: hidden;
     transition: max-height 0.35s ease;
   }
+}
 
   #nav-menu.show {
     max-height: 500px;
