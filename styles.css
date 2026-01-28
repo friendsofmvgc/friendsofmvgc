@@ -218,3 +218,8 @@ footer a:hover {
     width: 100%;
   }
 }
+nav {
+  border-bottom: 2px solid #dbe7df;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
