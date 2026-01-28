@@ -26,7 +26,10 @@ main, section, footer {
   background: #1f3d2b;
   padding: 0.8rem 1.2rem;
   position: relative;
+  height: 60px;
+  z-index: 1000;
 }
+
 
 .logo {
   font-weight: bold;
@@ -69,25 +72,34 @@ main, section, footer {
    MOBILE NAV
 ======================== */
 @media (max-width: 800px) {
+
   #nav-menu {
+    display: flex;
     flex-direction: column;
     background: #1f3d2b;
     position: absolute;
     top: 100%;
-    margin-top: 8px;
     right: 10px;
     width: 220px;
-    padding: 1rem;
+    padding: 0;              /* remove padding when closed */
     border-radius: 8px;
 
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      padding 0.2s ease;
   }
-}
 
   #nav-menu.show {
     max-height: 500px;
+    padding: 1rem;           /* padding only when open */
+    opacity: 1;
+    transform: translateY(0);
   }
 
   #nav-menu a {
@@ -98,6 +110,7 @@ main, section, footer {
     display: block;
   }
 }
+
 
 /* ========================
    HEADER TITLE AREA
