@@ -193,3 +193,28 @@ footer a:hover {
   margin: 1.5rem auto;
   border-radius: 8px;
 }
+.image-text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.image-text img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.image-text p {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .image-text {
+    flex-direction: column;
+  }
+  .image-text img,
+  .image-text p {
+    width: 100%;
+  }
+}
