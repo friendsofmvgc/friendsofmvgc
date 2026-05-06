@@ -334,10 +334,11 @@ footer a:hover {
 
 /* Image sizing */
 .board-image {
-  width: 300px;
-  max-width: 100%;
+  width: 250px;
+  max-width: 250px;
   height: auto;
   border-radius: 6px;
+  flex-shrink: 0; /* prevents stretching */
 }
 
 /* List styling */
@@ -358,7 +359,15 @@ footer a:hover {
   }
 
   .board-image {
-    width: 100%;
-    max-width: 400px;
+    width: 70%;
+    max-width: 250px; /* keeps it from blowing up */
   }
+}
+.board-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
 }
