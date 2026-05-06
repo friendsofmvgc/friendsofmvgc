@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
 <link rel="canonical" href="https://friendsofmvgc.org/residents-cup-2026.html">
-  <meta name="description" content="Friends of Mill Valley Golf Course is a nonprofit supporting preservation, environmental stewardship, and community access to the Mill Valley public golf course.">
 
-<meta name="keywords" content="Mill Valley Golf Course, MVGC, MV Friends, Friends of MVGC, Mill Valley golf, mvgolf, Mill Valley recreation, golf course nonprofit, Marin golf, community golf course">
+<meta name="description" content="Join the 2026 Mill Valley Residents Cup on October 3. A fun 9-hole scramble fundraiser supporting the Mill Valley Golf Course.">
+
+<meta name="keywords" content="Mill Valley Residents Cup, MVGC tournament, Mill Valley golf event, golf fundraiser Marin">
 
 <meta name="author" content="Friends of Mill Valley Golf Course">
 
-<meta property="og:title" content="Friends of Mill Valley Golf Course">
-<meta property="og:description" content="Supporting preservation, access, and improvements at the Mill Valley public golf course.">
+<meta property="og:title" content="Mill Valley Residents Cup 2026">
+<meta property="og:description" content="October 3, 2026 — 9-hole scramble fundraiser supporting the Mill Valley Golf Course.">
 <meta property="og:type" content="website">
+
 <meta charset="UTF-8">
-  <title>Residents Cup | Friends of Mill Valley Golf Course</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+<title>Residents Cup 2026 | Friends of Mill Valley Golf Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles.css">
+
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
 </head>
 
 <body>
+
+<!-- Banner -->
 <div id="top-banner" class="top-banner">
-    <a href="residents-cup-2026.html" class="banner-text">
-  Residents Cup • October 3 → Register Now
-</a>
+  <a href="residents-cup-2026.html" class="banner-text">
+    Residents Cup • October 3 → Register Now
+  </a>
   <button class="banner-close" onclick="closeBanner()">×</button>
 </div>
+
 <header>
 <div class="nav-container">
   <div class="logo">
@@ -48,19 +55,29 @@
     <a href="contact.html">Contact</a>
   </nav>
 </div>
-
-<h1>Residents Cup 2026</h1>
 </header>
 
+<!-- HERO (matches your homepage style) -->
+<section class="hero">
+  <h2>Residents Cup 2026</h2>
+  <p>Saturday, October 3 • Represent Your Neighborhood</p>
+
+  <div class="hero-buttons">
+    <a href="YOUR-FORM-LINK" class="button">Register Now</a>
+  </div>
+</section>
+
 <section>
+
   <h2>Event Overview</h2>
   <p>
     The Mill Valley Residents Cup is an annual community golf tournament and fundraiser supporting the Mill Valley Golf Course.
     Join us for a fun and competitive day representing your neighborhood.
   </p>
 
-  <h2>Date</h2>
-  <p><strong>Saturday, October 3, 2026</strong></p>
+  <div class="impact-box">
+    All proceeds support preservation, maintenance, and community access at the Mill Valley Golf Course.
+  </div>
 
   <h2>Format</h2>
   <p>
@@ -70,36 +87,25 @@
   <h2>Entry</h2>
   <p><strong>$50 per player</strong></p>
   <p>
-    All proceeds will be donated to the golf course charitable fund.
+    Includes food, drinks, sponsored holes, and prizes.
   </p>
 
-  <h2>What’s Included</h2>
-  <ul>
-    <li>Food and drinks</li>
-    <li>Sponsored holes</li>
-    <li>Prizes</li>
-  </ul>
+  <img src="images/mvgc-hole7.jpg" alt="Mill Valley Golf Course" class="page-image">
 
   <h2>Registration</h2>
   <p>
     Sign up using the link below:
   </p>
 
-  <p>
-    <a href="https://forms.gle/AwBydeWx6tK5vAZe7" target="_blank"><strong>Register Here</strong></a>
+  <p style="text-align:center;">
+    <a href="https://forms.gle/AwBydeWx6tK5vAZe7" class="button">Sign Up Now</a>
   </p>
-
   <p>
     You may also register using the QR code below:
   </p>
-<img src="images/residents-cup-2026-qr.png" alt="2026 Residents Cup Signup" class="qr-code">
-  <h2>About the Fundraiser</h2>
-  <p>
-    Friends of Mill Valley Golf Course is a nonprofit public benefit organization.
-    Contributions support preservation, maintenance, and community access to the course.
+<p>
+  <img src="images/residents-cup-2026-qr.png" alt="2026 Residents Cup Signup" class="qr-code">
   </p>
-
-  
 </section>
 
 <footer>
@@ -111,8 +117,7 @@
 function toggleMenu() {
   document.getElementById("nav-menu").classList.toggle("show");
 }
-</script>
-<script>
+
 function closeBanner() {
   document.getElementById("top-banner").style.display = "none";
   localStorage.setItem("bannerClosedTime", Date.now());
@@ -122,15 +127,16 @@ window.addEventListener("DOMContentLoaded", function() {
   const closedTime = localStorage.getItem("bannerClosedTime");
   const now = Date.now();
 
-  // 3 days = 259200000 ms
   if (closedTime && (now - closedTime < 259200000)) {
     document.getElementById("top-banner").style.display = "none";
   }
+
+  const eventDate = new Date("2026-10-04");
+  if (new Date() > eventDate) {
+    document.getElementById("top-banner").style.display = "none";
+  }
 });
-  const eventDate = new Date("2026-10-04"); // day after event
-if (new Date() > eventDate) {
-  document.getElementById("top-banner").style.display = "none";
-}
 </script>
+
 </body>
 </html>
