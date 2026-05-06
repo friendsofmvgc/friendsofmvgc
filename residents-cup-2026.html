@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="canonical" href="https://friendsofmvgc.org/about.html">
+<link rel="canonical" href="https://friendsofmvgc.org/residents-cup-2026.html">
   <meta name="description" content="Friends of Mill Valley Golf Course is a nonprofit supporting preservation, environmental stewardship, and community access to the Mill Valley public golf course.">
 
 <meta name="keywords" content="Mill Valley Golf Course, MVGC, MV Friends, Friends of MVGC, Mill Valley golf, mvgolf, Mill Valley recreation, golf course nonprofit, Marin golf, community golf course">
@@ -12,7 +12,7 @@
 <meta property="og:description" content="Supporting preservation, access, and improvements at the Mill Valley public golf course.">
 <meta property="og:type" content="website">
 <meta charset="UTF-8">
-  <title>About | Friends of Mill Valley Golf Course</title>
+  <title>Residents Cup | Friends of Mill Valley Golf Course</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
@@ -21,7 +21,15 @@
 </head>
 
 <body>
-
+<div id="top-banner" class="top-banner">
+  <span class="banner-text">
+    Residents Cup • October 3 → 
+    <a href="residents-cup-2026.html" class="banner-text">
+  Residents Cup • October 3 → Register Now
+</a>
+  </span>
+  <button class="banner-close" onclick="closeBanner()">×</button>
+</div>
 <header>
 <div class="nav-container">
   <div class="logo">
@@ -107,6 +115,17 @@ function toggleMenu() {
   document.getElementById("nav-menu").classList.toggle("show");
 }
 </script>
+<script>
+function closeBanner() {
+  document.getElementById("top-banner").style.display = "none";
+  localStorage.setItem("bannerClosed", "true");
+}
 
+window.addEventListener("DOMContentLoaded", function() {
+  if (localStorage.getItem("bannerClosed") === "true") {
+    document.getElementById("top-banner").style.display = "none";
+  }
+});
+</script>
 </body>
 </html>
