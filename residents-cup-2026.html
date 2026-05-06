@@ -118,14 +118,22 @@ function toggleMenu() {
 <script>
 function closeBanner() {
   document.getElementById("top-banner").style.display = "none";
-  localStorage.setItem("bannerClosed", "true");
+  localStorage.setItem("bannerClosedTime", Date.now());
 }
 
 window.addEventListener("DOMContentLoaded", function() {
-  if (localStorage.getItem("bannerClosed") === "true") {
+  const closedTime = localStorage.getItem("bannerClosedTime");
+  const now = Date.now();
+
+  // 3 days = 259200000 ms
+  if (closedTime && (now - closedTime < 259200000)) {
     document.getElementById("top-banner").style.display = "none";
   }
 });
+  const eventDate = new Date("2026-10-04"); // day after event
+if (new Date() > eventDate) {
+  document.getElementById("top-banner").style.display = "none";
+}
 </script>
 </body>
 </html>
