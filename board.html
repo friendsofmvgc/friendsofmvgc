@@ -21,7 +21,12 @@
 </head>
 
   <body>
-
+<div id="top-banner" class="top-banner">
+  <span class="banner-text">
+    Residents Cup • October 3 → 
+    <a href="residents-cup-2026.html" class="banner-text">
+  Residents Cup • October 3 → Register Now
+</a>
 <header>
 <div class="nav-container">
   <div class="logo">
@@ -69,6 +74,18 @@
 function toggleMenu() {
   document.getElementById("nav-menu").classList.toggle("show");
 }
+</script>
+    <script>
+function closeBanner() {
+  document.getElementById("top-banner").style.display = "none";
+  localStorage.setItem("bannerClosed", "true");
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  if (localStorage.getItem("bannerClosed") === "true") {
+    document.getElementById("top-banner").style.display = "none";
+  }
+});
 </script>
 </body>
 </html>
