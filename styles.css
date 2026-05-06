@@ -265,3 +265,15 @@ footer a:hover {
   border-radius: 6px;
   font-size: 1.05rem;
 }
+@media (max-width: 600px) {
+  .qr-code {
+    width: 120px;
+  }
+}
+.qr-code {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
