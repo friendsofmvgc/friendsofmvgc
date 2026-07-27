@@ -371,3 +371,17 @@ footer a:hover {
   line-height: 1.8;
 }
 }
+.sponsor-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.sponsor-grid img {
+  max-width: 250px;
+  max-height: 120px;
+  object-fit: contain;
+}
